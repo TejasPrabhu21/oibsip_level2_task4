@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="register">
+        <div class="card">
+            <div class="right">
+                <h1>Register</h1>
+                <form onsubmit="signUp()">
+                    <input type="text" placeholder='Name' id="name" required/>
+                    <input type="text" placeholder='Username' id="username" required/>
+                    <input type="email" placeholder='Email' id="email" required/>
+                    <input type="password" placeholder='Password' id="password" required/>
+                    <input type="password" placeholder='Confirm Password' id="confirmPassword" required/>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+            <div class="left">
+                <h1 class="heading">Hello</h1>
+                <p>Create a new account today and enjoy our amazing features. Just fill in your details and you’re good to go.</p>
+                <span>Already have an account ?</span>
+
+                <a href="./login.html"><button>Login</button></a>
+            </div>
+        </div>
+    </div>
+    <div id="toast" class=""> Some text some message..</div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
